@@ -13,8 +13,3 @@ def print_models(unprinted_designs, completed_designs):
         completed_designs.append(design)
 
     print(completed_designs)
-
-
-unprinted_designs = ['iphone case', 'robot', 'dodecahedron']
-completed_designs = []
-print_models(unprinted_designs, completed_designs)

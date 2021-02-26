@@ -1,20 +1,13 @@
-def print_models(unprinted_designs, completed_designs):
-    """
-    模拟打印每个设计，直到没有未打印的为止
-    打印完一个后移到已打印列表中
-    :param unprinted_designs: 未打印设计
-    :param completed_designs: 已打印设计
-    :return:None
-    """
-    while unprinted_designs:
-        design = unprinted_designs.pop()
+from collections import OrderedDict
+# favorite_languages = OrderedDict()
 
-        print("Printing: " + design)
-        completed_designs.append(design)
+favorite_languages = {}
 
-    print(completed_designs)
+favorite_languages['jen'] = 'python'
+favorite_languages['sarah'] = 'c'
+favorite_languages['edward'] = 'ruby'
+favorite_languages['phil'] = 'python'
 
-
-unprinted_designs = ['iphone case', 'robot', 'dodecahedron']
-completed_designs = []
-print_models(unprinted_designs, completed_designs)
+for name, language in favorite_languages.items():
+    print(name.title() + "'s favorite language is " +
+          language.title() + ".")

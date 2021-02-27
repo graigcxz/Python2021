@@ -25,3 +25,4 @@ class Restaurant:
     def increment_number_served(self, numbers):
         """将人数增加指定的量"""
         self.number_served += numbers
+

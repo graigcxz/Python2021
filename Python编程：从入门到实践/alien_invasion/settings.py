@@ -1,5 +1,6 @@
 """存储【Alien Invasion】中所有设置的类"""
 
+
 class Settings:
 
     def __init__(self):
@@ -20,6 +21,6 @@ class Settings:
         self.bullets_allowed = 3
 
         # 外星人设置
-        self.alien_speed_factor = 1
-        self.fleet_drop_speed = 0.2
+        self.alien_speed_factor = 0.1
+        self.fleet_drop_speed = 5
         self.fleet_direction = 1
